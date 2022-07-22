@@ -43,6 +43,7 @@ namespace Pac_Man
         public virtual void Move() // 이동 시작
         {
             CheckItem();
+            CheckEnemy();
             switch (state)
             {
                 case (int)State.up:
@@ -126,6 +127,15 @@ namespace Pac_Man
                 GameLoop.Instance.GetRender.GetTile(X, Y).SetIsItem(false);
                 GameLoop.Instance.GetRender.GetTile(X, Y).SetTileShape('　');
                 score += 10;
+            }
+        }
+        private void CheckEnemy()
+        {
+            if((X == GameLoop.Instance.GetEnemy().tileX && Y == GameLoop.Instance.GetEnemy().tileY) ||
+                    (X == GameLoop.Instance.GetEnemy2().tileX && Y == GameLoop.Instance.GetEnemy2().tileY))
+            {
+                GameLoop.Instance.collision = true;
+                Thread.Sleep(1000);
             }
         }
     }

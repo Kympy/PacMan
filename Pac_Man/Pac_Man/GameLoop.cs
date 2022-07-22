@@ -30,6 +30,7 @@ namespace Pac_Man
 
         private Enemy enemy2;
         public Enemy GetEnemy2() { return enemy2; }
+        public bool collision = false;
         public void Awake() // 1 행동 전 초기화
         {
             setting = new GameSetting();
@@ -66,6 +67,16 @@ namespace Pac_Man
                         Console.WriteLine();
                         Console.WriteLine();
                         Console.WriteLine("\t\tGame Win");
+                        Console.WriteLine();
+                        return;
+                    }
+                    if(collision)
+                    {
+                        Console.Clear();
+                        Console.WriteLine();
+                        Console.WriteLine();
+                        Console.WriteLine("\t\tGame Over");
+                        Console.WriteLine();
                         return;
                     }
                 }
