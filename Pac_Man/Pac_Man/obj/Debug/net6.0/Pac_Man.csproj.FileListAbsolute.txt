@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\bin\Debug\net6.0\Pac_Man.exe
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\bin\Debug\net6.0\Pac_Man.deps.json
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\bin\Debug\net6.0\Pac_Man.runtimeconfig.json
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\bin\Debug\net6.0\Pac_Man.dll
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\bin\Debug\net6.0\Pac_Man.pdb
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\obj\Debug\net6.0\Pac_Man.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\obj\Debug\net6.0\Pac_Man.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\obj\Debug\net6.0\Pac_Man.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\obj\Debug\net6.0\Pac_Man.AssemblyInfo.cs
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\obj\Debug\net6.0\Pac_Man.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\obj\Debug\net6.0\Pac_Man.dll
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\obj\Debug\net6.0\refint\Pac_Man.dll
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\obj\Debug\net6.0\Pac_Man.pdb
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\obj\Debug\net6.0\Pac_Man.genruntimeconfig.cache
+C:\Users\User\Desktop\PacMan\Pac_Man\Pac_Man\obj\Debug\net6.0\ref\Pac_Man.dll
