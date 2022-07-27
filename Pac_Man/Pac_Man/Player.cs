@@ -42,7 +42,7 @@ namespace Pac_Man
         }
         public virtual void Move() // 이동 시작
         {
-            CheckItem();
+            CheckItem(); // 충돌 체크
             CheckEnemy();
             switch (state)
             {
@@ -59,7 +59,7 @@ namespace Pac_Man
                         flag = !flag;
                         if (GameLoop.Instance.GetRender.GetTile(X - 1, Y).isWall) break; // 벽 못 지나감
                         X -= 1; // 이동
-                        if (X <= 1) X = 1;
+                        if (X <= 1) X = 1; // 방향별 최대 이동범위 제한
                         break;
                     }
                 case (int)State.down:
@@ -120,7 +120,7 @@ namespace Pac_Man
                     }
             }
         }
-        private void CheckItem()
+        private void CheckItem() // 아이템과의 충돌체크
         {
             if (GameLoop.Instance.GetRender.GetTile(X, Y).isItem)
             {
@@ -129,7 +129,7 @@ namespace Pac_Man
                 score += 10;
             }
         }
-        private void CheckEnemy()
+        private void CheckEnemy() // 적과의 충돌 체크
         {
             if((X == GameLoop.Instance.GetEnemy().tileX && Y == GameLoop.Instance.GetEnemy().tileY) ||
                     (X == GameLoop.Instance.GetEnemy2().tileX && Y == GameLoop.Instance.GetEnemy2().tileY))

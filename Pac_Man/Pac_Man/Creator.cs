@@ -23,7 +23,7 @@ namespace Pac_Man
         private int enemyY;
         public int GetEnemyY() { return enemyY; }
 
-        public void CreateMap(Tile[,] tile, int width, int height)
+        public void CreateMap(Tile[,] tile, int width, int height) // 테두리를 먼저 생성
         {
             _width = width;
             _height = height;
@@ -54,7 +54,7 @@ namespace Pac_Man
             CreateWall(tile);
         }
 
-        public void CreateWall(Tile[,] tile)
+        public void CreateWall(Tile[,] tile) // 50% 확률로 각각의 타일을 벽으로 변경
         {
             for(int i = 1; i < _height - 1; i++)
             {
@@ -71,7 +71,7 @@ namespace Pac_Man
             }
             CreateRoad(tile);
         }
-        public void CreateRoad(Tile[,] tile)
+        public void CreateRoad(Tile[,] tile) // 기준 타일을 중심으로 좌우, 상하 중 한 곳이라도 막히면 십자로 길을 만든다.
         {
             for (int i = 2; i < _height - 2; i++)
             {
@@ -111,7 +111,7 @@ namespace Pac_Man
             }
             RemoveIsolatedItem(tile);
         }
-        public void RemoveIsolatedItem(Tile[,] tile)
+        public void RemoveIsolatedItem(Tile[,] tile) // 사방이 모두 막혀 고립된 아이템을 제거한다.
         {
             for(int i = 0; i < _height - 1; i++)
             {
@@ -131,7 +131,7 @@ namespace Pac_Man
             }
             SetPlayerPos(tile);
         }
-        public void SetPlayerPos(Tile[,] tile)
+        public void SetPlayerPos(Tile[,] tile) // 고립되지 않은 지역을 찾아 플레이어를 생성
         {
             for(int i = 2; i < _height - 2; i++)
             {
@@ -172,7 +172,7 @@ namespace Pac_Man
             if (rand.Next(0, 4) < 3) return true;
             else return false;
         }
-        public bool IsRangeOut(int i, int j)
+        public bool IsRangeOut(int i, int j) // 좌표가 맵의 범위안에 있는지 검사
         {
             if (i < 1 || j < 1 || i > _height - 1 || j > _width - 1)
             {

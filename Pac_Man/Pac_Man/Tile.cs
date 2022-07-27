@@ -21,17 +21,14 @@ namespace Pac_Man
         protected ConsoleColor color; // 타일의 색상
         public ConsoleColor tileColor { get { return color; } set { color = value; } }
 
-        protected bool IsItem = false;
+        protected bool IsItem = false; // 아이템인지?
         public bool isItem { get { return IsItem; }}
         public void SetIsItem(bool flag) { IsItem = flag; }
 
-        protected bool IsWall = false;
+        protected bool IsWall = false; // 벽인지?
         public bool isWall { get { return IsWall; }}
         public void SetIsWall(bool flag) { IsWall = flag; }
 
-        public virtual void SetPosition(int x, int y)
-        {
-
-        }
+        public virtual void SetPosition(int x, int y) { }
     }
 }

@@ -28,9 +28,9 @@ namespace Pac_Man
         private Enemy enemy; // 적
         public Enemy GetEnemy() { return enemy; }
 
-        private Enemy enemy2;
+        private Enemy enemy2; // 적2
         public Enemy GetEnemy2() { return enemy2; }
-        public bool collision = false;
+        public bool collision = false; // 충돌 판정 변수
         public void Awake() // 1 행동 전 초기화
         {
             setting = new GameSetting();
@@ -61,7 +61,7 @@ namespace Pac_Man
                     player.Move(); // 이동
                     enemy.Move();
                     enemy2.Move();
-                    if(player.GetScore() >= 4000)
+                    if(player.GetScore() >= 4000) // 점수 4000 이상
                     {
                         Console.Clear();
                         Console.WriteLine();
@@ -70,7 +70,7 @@ namespace Pac_Man
                         Console.WriteLine();
                         return;
                     }
-                    if(collision)
+                    if(collision) // 적과의 충돌
                     {
                         Console.Clear();
                         Console.WriteLine();

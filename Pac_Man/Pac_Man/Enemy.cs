@@ -34,9 +34,9 @@ namespace Pac_Man
         {
             distanceX = X - GameLoop.Instance.GetPlayer().tileX;
             distanceY = Y - GameLoop.Instance.GetPlayer().tileY;
-            if (MathF.Abs(distanceX + distanceY) < 10)
+            if (MathF.Abs(distanceX) + MathF.Abs(distanceY) < 15)
             {
-                if (distanceX > 0)
+                if (distanceX > 0) // 플레이어가 더 위에 있다면
                 {
                     if (flag) // 애니메이션
                     {
@@ -51,7 +51,7 @@ namespace Pac_Man
                     {
                         return; // 벽 못 지나감
                     }
-                    X -= 1; // 이동
+                    X -= 1; // 위로 이동
                     if (X <= 1) X = 1;
                 }
                 else if (distanceX < 0)
